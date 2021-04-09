@@ -21,4 +21,13 @@ public class User_Validation {
         Assertions.assertTrue(ch);
         System.out.println(ch);
     }
+    @Test
+    void Check_Email_WhileCorrect_Return_True() {
+
+        JunitAssertion email = new JunitAssertion();
+        Boolean ch = email.email("Mouni.Roy@gmail.com");
+        Assertions.assertTrue(ch);
+        System.out.println(ch);
+    }
+
 }
