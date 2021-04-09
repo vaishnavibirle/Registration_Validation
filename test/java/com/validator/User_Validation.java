@@ -50,6 +50,13 @@ public class User_Validation {
         Assertions.assertTrue(ch);
         System.out.println(ch);
     }
+    @Test
+    void Check_Rule3_WhileCorrect_Return_True() {
+        JunitAssertion password = new JunitAssertion();
+        Boolean ch = password.passwordRule3("MouniRoy12");
+        Assertions.assertTrue(ch);
+        System.out.println(ch);
+    }
 
 
 }
