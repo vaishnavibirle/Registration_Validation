@@ -29,5 +29,12 @@ public class User_Validation {
         Assertions.assertTrue(ch);
         System.out.println(ch);
     }
+    @Test
+    void Check_MobileNumber_WhileCorrect_Return_True() {
+
+        JunitAssertion number = new JunitAssertion();
+        Boolean ch = number.mobileNumber("91 7880437890");
+        Assertions.assertTrue(ch);
+    }
 
 }
