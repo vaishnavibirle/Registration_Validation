@@ -9,7 +9,15 @@ public class User_Validation {
     void Check_Firstname_WhileCorrect_Return_True() {
 
         JunitAssertion fName = new JunitAssertion();
-        Boolean ch = fName.firstName("Kshama");
+        Boolean ch = fName.firstName("Mouni");
+        Assertions.assertTrue(ch);
+        System.out.println(ch);
+    }
+    @Test
+    void Check_Lastname_WhileCorrect_Return_True() {
+
+        JunitAssertion lName = new JunitAssertion();
+        Boolean ch = lName.lastName("Roy");
         Assertions.assertTrue(ch);
         System.out.println(ch);
     }

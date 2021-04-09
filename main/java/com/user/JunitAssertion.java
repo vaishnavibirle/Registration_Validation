@@ -5,4 +5,8 @@ public class JunitAssertion {
         Boolean firstNameValidation = Pattern.matches("^[A-Z]{1}[a-z]{2,}$",a);
         return firstNameValidation;
     }
+    public Boolean lastName(String a) {
+        Boolean lastNameValidation = Pattern.matches("^[A-Z]{1}[a-z]{2,}$",a);
+        return lastNameValidation;
+    }
 }
