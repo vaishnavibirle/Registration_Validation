@@ -21,4 +21,8 @@ public class JunitAssertion {
         Boolean passwordRule1Validation = Pattern.matches("^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$",e);
         return passwordRule1Validation;
     }
+    public Boolean passwordRule2 (String f) {
+        Boolean passwordRule2Validation = Pattern.matches("^(?=.*[A-Z]).{8,20}$",f);
+        return passwordRule2Validation;
+    }
 }

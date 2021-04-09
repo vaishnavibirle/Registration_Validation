@@ -43,6 +43,13 @@ public class User_Validation {
         Assertions.assertTrue(ch);
         System.out.println(ch);
     }
+    @Test
+    void Check_Rule2_WhileCorrect_Return_True() {
+        JunitAssertion password = new JunitAssertion();
+        Boolean ch = password.passwordRule2("Ashiythi");
+        Assertions.assertTrue(ch);
+        System.out.println(ch);
+    }
 
 
 }
