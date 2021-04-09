@@ -36,5 +36,13 @@ public class User_Validation {
         Boolean ch = number.mobileNumber("91 7880437890");
         Assertions.assertTrue(ch);
     }
+    @Test
+    void Check_Rule1_WhileCorrect_Return_True() {
+        JunitAssertion password = new JunitAssertion();
+        Boolean ch = password.passwordRule1("Mouni1998");
+        Assertions.assertTrue(ch);
+        System.out.println(ch);
+    }
+
 
 }

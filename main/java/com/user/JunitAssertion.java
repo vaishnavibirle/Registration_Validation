@@ -14,7 +14,11 @@ public class JunitAssertion {
         return emailValidation;
     }
     public Boolean mobileNumber (String d) {
-        Boolean mobileNumberValidation =Pattern.matches("^[91]+[\\\\s]+[1-9]{1}+[0-9]{9}",d);
+        Boolean mobileNumberValidation = Pattern.matches("^[91]+[\\\\s]+[1-9]{1}+[0-9]{9}",d);
         return mobileNumberValidation;
+    }
+    public Boolean passwordRule1 (String e) {
+        Boolean passwordRule1Validation = Pattern.matches("^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$",e);
+        return passwordRule1Validation;
     }
 }
