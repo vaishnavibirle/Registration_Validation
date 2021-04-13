@@ -39,30 +39,37 @@ public class User_Validation {
     @Test
     void Check_Rule1_WhileCorrect_Return_True() {
         JunitAssertion password = new JunitAssertion();
-        Boolean ch = password.passwordRule1("Mouni1998");
+        Boolean ch = password.passwordRule1("Mouni1998"); //accepts 8 digits
         Assertions.assertTrue(ch);
         System.out.println(ch);
     }
     @Test
     void Check_Rule2_WhileCorrect_Return_True() {
         JunitAssertion password = new JunitAssertion();
-        Boolean ch = password.passwordRule2("Ashiythi");
+        Boolean ch = password.passwordRule2("Ashiythi"); //accepts one uppercase
         Assertions.assertTrue(ch);
         System.out.println(ch);
     }
     @Test
     void Check_Rule3_WhileCorrect_Return_True() {
         JunitAssertion password = new JunitAssertion();
-        Boolean ch = password.passwordRule3("MouniRoy12");
+        Boolean ch = password.passwordRule3("MouniRoy12"); //accepts one numeric number
         Assertions.assertTrue(ch);
         System.out.println(ch);
     }
     @Test
     void Check_Rule4_WhileCorrect_Return_True() {
         JunitAssertion password = new JunitAssertion();
-        Boolean ch = password.passwordRule2("Ashiythi@9");
+        Boolean ch = password.passwordRule4("Ashiythi@9"); //accepts one special character
         Assertions.assertTrue(ch);
         System.out.println(ch);
+    }
+
+    @Test
+    public void givenEmailIsValidShouldReturnTrue() {
+        JunitAssertion email = new JunitAssertion();
+        boolean result = email.email("abc-100@gmail.com.au"); //accepts all the sample emails
+        Assertions.assertTrue(result);
     }
 
 
